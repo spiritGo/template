@@ -1,0 +1,86 @@
+/*------------------------ 
+检索目录
+自定义变量
+初始化元素
+内外边距
+弹性布局
+字体设置
+背景设置
+边框设置
+-------------------------*/
+/* 自定义变量 */
+$white: #ffffff;
+$black: #333333;
+$black-light: #2c3e50;
+
+/* 初始化元素 */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $black-light;
+}
+
+/* 内外边距 */
+.m-20 {
+  margin: 20px;
+}
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.p-20 {
+}
+
+.px-20 {
+}
+
+.py-20 {
+}
+
+.pl-20 {
+}
+
+.pt-20 {
+}
+
+.pr-20 {
+}
+
+.pb-20 {
+}
+
+/* 弹性布局 */
+
+/* 字体设置 */
+
+/* 背景设置 */
+
+/* 边框设置 */
