@@ -7,12 +7,22 @@
 字体设置
 背景设置
 边框设置
+按钮样式
 -------------------------*/
 
 /* 自定义变量 */
 $white: #ffffff;
 $black: #333333;
 $black-light: #2c3e50;
+$grey: #999999;
+$grey-light: #f8f8f8;
+$mask: rgba(0, 0, 0, 0.4);
+$border: #dcdfe6;
+$primary: #409eff;
+$success: #67c23a;
+$warning: #e6a23c;
+$danger: #f56c6c;
+$info: #909399;
 
 /* 初始化元素 */
 html,
@@ -27,6 +37,10 @@ body {
 }
 
 /* 内外边距 */
+.m-auto {
+  margin: auto;
+}
+
 .m-20 {
   margin: 20px;
 }
@@ -140,6 +154,7 @@ body {
 .align-stretch {
   align-items: stretch;
 }
+
 /* 字体设置 */
 .font-16 {
   font-size: 16px;
@@ -174,5 +189,91 @@ body {
 }
 
 /* 背景设置 */
+.bg-grey {
+  background-color: $grey-light;
+}
+
+.bg-black {
+  background-color: $black-light;
+}
+
+.bg-white {
+  background-color: $white;
+}
 
 /* 边框设置 */
+.border {
+  border: 1px solid $border;
+}
+
+.border.radius {
+  border-radius: 2em;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border;
+}
+
+.border-right {
+  border-right: 1px solid $border;
+}
+
+.border-left {
+  border-left: 1px solid $border;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.box-shadow--light {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: all 0.3s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.btn.primary {
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn.success {
+  color: $white;
+  background-color: $success;
+  border-color: $success;
+}
+
+.btn.warning {
+  color: $white;
+  background-color: $warning;
+  border-color: $warning;
+}
+
+.btn.danger {
+  color: $white;
+  background-color: $danger;
+  border-color: $danger;
+}

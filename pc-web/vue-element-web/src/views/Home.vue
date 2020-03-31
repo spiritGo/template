@@ -1,5 +1,7 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <button class="btn">按钮</button>
+  </div>
 </template>
 
 <script>
@@ -9,3 +11,9 @@ export default {
   name: "Home"
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  padding: 50px;
+}
+</style>
