@@ -1,40 +1,69 @@
 /* 字体相关 */
-.font-28 {
-	font-size: 28rpx;
+
+.font-22 {
+  font-size: 22rpx;
 }
 
 .font-24 {
-	font-size: 24rpx;
+  font-size: 24rpx;
+}
+
+.font-26 {
+  font-size: 26rpx;
+}
+
+.font-28 {
+  font-size: 28rpx;
+}
+
+.font-30 {
+  font-size: 30rpx;
+}
+
+.font-32 {
+  font-size: 32rpx;
 }
 
 .color-white {
-	color: $uni-text-color-inverse;
+  color: $uni-text-color-inverse;
 }
 
 .color-black {
-	color: $uni-text-color;
+  color: $uni-text-color;
 }
 
 .color-primary {
-	color: $uni-color-primary;
+  color: $uni-color-primary;
 }
 
 .color-success {
-	color: $uni-color-success;
+  color: $uni-color-success;
 }
 
 .color-warning {
-	color: $uni-color-warning;
+  color: $uni-color-warning;
 }
 
 .line-height-15 {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 .line-height-16 {
-	line-height: 1.6;
+  line-height: 1.6;
 }
 
 .font-bold {
-	font-weight: bold;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
 }
