@@ -1,4 +1,12 @@
 /* 字体设置 */
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
 .font-16 {
   font-size: 16px;
 }
@@ -29,4 +37,16 @@
 
 .font-30 {
   font-size: 30px;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }

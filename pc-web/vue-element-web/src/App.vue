@@ -6,4 +6,5 @@
 
 <style lang="scss">
 @import "./stylus/base.scss";
+@import "../emoji/emoji.css";
 </style>
