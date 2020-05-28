@@ -8,6 +8,7 @@
         :key="index"
       ></i>
     </div>
+    <div contenteditable>dfsdf 1f600</div>
   </div>
 </template>
 

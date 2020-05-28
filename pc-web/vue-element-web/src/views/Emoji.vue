@@ -1,6 +1,6 @@
 <template>
   <div class="p-20">
-    <el-table :data="emoji" border stripe class="mt-20">
+    <el-table :data="emoji" border stripe class="mt-20" height="700px">
       <el-table-column
         type="index"
         label="索引"
