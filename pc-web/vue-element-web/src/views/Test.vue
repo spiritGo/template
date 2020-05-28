@@ -8,7 +8,7 @@
         :key="index"
       ></i>
     </div>
-    <div contenteditable>dfsdf 1f600</div>
+    <div contenteditable ref="contentbox">dfsdf 1f600</div>
   </div>
 </template>
 
@@ -19,7 +19,28 @@ export default {
       emoji: ["1f60e", "1f600", "1f620", "1f629"],
     };
   },
+
+  mounted() {
+    this.listen();
+  },
+
+  methods: {
+    listen() {
+      this.$refs.contentbox.addEventListener("paste", (e) => {
+        console.log(e.clipboardData.getData("text/html"));
+      });
+    },
+  },
 };
 </script>
 
-<style></style>
+<style>
+div[contenteditable] {
+  width: 800px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  margin-top: 20px;
+  padding: 10px;
+}
+</style>

@@ -1,7 +1,5 @@
 <template>
-	<view class="content">
-		<view class="no-data">{{ title }}</view>
-	</view>
+	<view class="p-30"><button size="mini" type="primary" @click="goPageNavigation">导航</button></view>
 </template>
 
 <script>
@@ -12,7 +10,13 @@ export default {
 		};
 	},
 	onLoad() {},
-	methods: {}
+	methods: {
+		goPageNavigation() {
+			uni.navigateTo({
+				url: '../page-navigation/page-navigation'
+			});
+		}
+	}
 };
 </script>
 

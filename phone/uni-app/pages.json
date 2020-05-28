@@ -3,13 +3,73 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/page-navigation/page-navigation",
+			"style": {
+				"backgroundColor": "#007AFF",
+				"navigationBarBackgroundColor": "#4CD964",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "导航",
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"color": "#4CD964"
+					},
+					"titleNView": {
+						"homeButton": true,
+						"titleColor": "#FFFFFF",
+						"type": "default",
+						"backButton": {
+							"redDot": true,
+							"badgeText": "12"
+						},
+						"buttons": [{
+							"float": "right",
+							"type": "favorite",
+							"colorPressed": "rgba(255,0,0,0.5)",
+							"color": "#007AFF"
+						}, {
+							"float": "right",
+							"type": "close"
+						}, {
+							"float": "right",
+							"type": "forward"
+						}, {
+							"float": "right",
+							"type": "home"
+						}, {
+							"float": "right",
+							"type": "menu"
+						}, {
+							"float": "right",
+							"type": "share"
+						}, {
+							"float": "right",
+							"type": "none",
+							"text": "\u2713"
+						}],
+						"searchInput": {
+							"align": "left",
+							"autoFocus": true,
+							"backgroundColor": "rgba(255,255,255,0.5)",
+							"borderRadius": "100px",
+							"placeholder": "输入啥子",
+							"placeholderColor": "#ffffff",
+							"color": "#ffffff"
+						}
+					}
+				}
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
