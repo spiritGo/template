@@ -12,5 +12,17 @@ module.exports = {
             // template 中的 title 标签需要是 <title><%= htmlWebpackPlugin.options.title %></title>
             title: 'Index Page'
         }
+    },
+    devServer: {
+        proxy: {
+            "/api": {
+                target: 'https://pmm.kuayunda.com',
+                changeOrigin: true,
+                secure: true,
+                pathRewrite: {
+                    "^/api": "/api"
+                }
+            }
+        }
     }
 }

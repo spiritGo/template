@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { GetNationality } from "../api/api";
 export default {
   data() {
     return {
@@ -22,9 +23,16 @@ export default {
 
   mounted() {
     this.listen();
+    this.loadData();
   },
 
   methods: {
+    loadData() {
+      GetNationality().then((res) => {
+        console.log(res);
+      });
+    },
+
     listen() {
       this.$refs.contentbox.addEventListener("paste", (e) => {
         console.log(e.clipboardData.getData("text/html"));

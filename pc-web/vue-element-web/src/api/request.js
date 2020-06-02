@@ -1,10 +1,9 @@
 import axios from "axios";
+import { BASE_URL } from '../utils/config';
 
-const BASE_URL = "";
 const TIMEOUT = 30000;
-
 const request = axios.create({
-    baseURL: BASE_URL,
+    baseURL: process.env.NODE_ENV == 'development' ? '/api/' : BASE_URL,
     timeout: TIMEOUT
 });
 
