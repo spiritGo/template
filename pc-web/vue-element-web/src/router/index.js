@@ -9,21 +9,22 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
-  },
-  {
+  }, {
     path: '/time',
     name: 'Time',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Time.vue')
-  },
-  {
+    component: () => import(/* webpackChunkName: "Time" */ '../views/Time.vue')
+  }, {
     path: '/emoji',
     name: 'Emoji',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Emoji.vue')
-  },
-  {
+    component: () => import(/* webpackChunkName: "Emoji" */ '../views/Emoji.vue')
+  }, {
     path: '/test',
     name: 'Test',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Test.vue')
+    component: () => import(/* webpackChunkName: "Test" */ '../views/Test.vue')
+  }, {
+    path: '/index',
+    name: 'Index',
+    component: () => import(/* webpackChunkName: "Index" */ '../views/Index.vue')
   }
 ]
 
